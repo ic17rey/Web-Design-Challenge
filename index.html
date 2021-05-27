@@ -43,12 +43,12 @@
 
     <!-- Another example of navbar - bootstrap-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
-        <a class="navbar-brand" href="#">Latitude</a>
+        <a class="navbar-brand bg-info text-white" href="https://ic17rey.github.io/Web-Design-Challenge/">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-    
+    <!-- text-white -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <!-- <li class="nav-item active">
@@ -68,6 +68,15 @@
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
             </li>
+             <li class="nav-item active">
+                <a class="nav-link" href="#">Comparison<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Data<span class="sr-only">(current)</span></a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li> -->
             <!-- <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
             </li>
@@ -79,9 +88,51 @@
         </div>
       </nav>
     
-    
-    <h1>Project Summary: Latitudes</h1>
-    <hr>
+        <div class="container">
+            <section>
+            <h1>Project Summary: Latitudes</h1>
+            <hr>
+            <p>For the Latitudes Project, weather conditions were analyzed for over 500 cities across the globe
+            to study how distance from the equator impacted weather. Random latitudes and longitudes were
+            compiled and using the Python library Citipy the nearest cities to those coordinates were identifed.
+            </p>
+            <p>With the resulting list of over 500 cities and using the OpenWeatherMap API, data for several
+            weather conditions was compiled into a dataset. Plots were created using Matplotlib to examine
+            latitude versus each weather condition (temperature, humidity, cloudiness, and wind speed).
+            This site includes the source data and the visualizations created for the project, along with
+            explanations and observations made during the analysis.
+            </p>
+            <article>
+                <a target="_blank" href="assets/Fig1-MaxTemp.png">
+                <img src="assets/Fig1-MaxTemp.png" alt="Max Temperature Map">
+                </a>
+                </article>
+                <hr>
+                <article>
+                <a target="_blank" href="assets/Fig2-Humidity.png">
+                <img src="assets/Fig2-Humidity.png" alt="Humidity Map">
+                </a>
+                </article>
+                <hr>
+                <article>
+                <a href="assets/Fig3-Cloudiness.png">
+                <img target="_blank" src="assets/Fig3-Cloudiness.png" alt="Cloudiness Map">
+                </a>
+                </article>
+                <article>
+                    <a href="assets/Fig4-Wind.png">
+                    <img target="_blank" src="assets/Fig4-Wind.png" alt="Windspeed Map">
+                    </a>
+                    </article>
+                <hr>
+            </section>
+        </div>
+
+            
+
+
+
+
 </body>
 
 </html>
