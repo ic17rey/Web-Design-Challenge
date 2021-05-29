@@ -1,126 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Latitudes Project Analysis</title>
+    
+    <!-- Bootstrap Link and CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+        crossorigin="anonymous">
 
-  <!-- Bootstrap Link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
-    crossorigin="anonymous">
+    <!-- File for additional styling
+        <link rel="stylesheet" href="style.css"> -->
+    
+    <!-- Default options that are added when creating the html using "!" -->    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Design-Challenge</title>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" 
-        crossorigin="anonymous"></script>
-        
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- CSS file for other styling needed -->
-    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-
-
-    <!-- From example of navbar - bootstrap-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
-        <a class="navbar-brand bg-info text-white" href="index.html">Latitude</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto"> -->
-            <!-- <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li> -->
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li> -->
-        <ul class="nav navbar-nav nav-right">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
-                aria-haspopup="true" aria-expanded="false">
-                Plots
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="visualizations/max_temp.html">Max Temperature</a>
-                <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
-                <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
-                <a class="dropdown-item" href="visualizations/wind.html">Wind</a>
-              </div>
-            </li>
-             <li class="nav-item active">
-                <a class="nav-link" href="#">Comparison<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Data<span class="sr-only">(current)</span></a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li> -->
-            <!-- <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
-            </li>
-        </ul>
-          <!-- <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form> -->
+<body style="background-color: lightgray;">
+    <!-- From bootstrap documentation add navbar and customize paddings and margins-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
+        <div class="container-fluid">
+          <!-- Keep button to the far left/update for teal-colored button, white bolded text, rounded corners-->
+          <a class="navbar-brand bg-info text-white p-2 rounded fw-bold" href="index.html">Latitude</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" 
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Plots</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="./visualizations/max_temp.html">Max Temperature</a></li>
+                        <li><a class="dropdown-item" href="./visualizations/humidity.html">Humidity</a></li>
+                        <li><a class="dropdown-item" href="./visualizations/cloudiness.html">Cloudiness</a></li>
+                        <li><a class="dropdown-item" href="./visualizations/wind.html">Wind Speed</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active"  href="./visualizations/comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active"  href="./visualizations/data.html">Data</a>
+                </li>
+            </ul>
+          </div>
         </div>
       </nav>
+
+<!-- Create container and row for the Summary and Visualizations of landing page -->
+<div class="container">
+    <div class="row mt-4">
         
-    <!-- Creates the Overall Grid -->
-    <div class="container">
-        <div class="col-md-8">
-        <h1>Project Summary: Latitudes</h1>
-        <hr>
-        <p>For the Latitudes Project, weather conditions were analyzed for over 500 cities across the globe
-        to study how distance from the equator impacted weather. Random latitudes and longitudes were
-        compiled and using the Python library Citipy the nearest cities to those coordinates were identifed.
-        </p>
-        <p>With the resulting list of over 500 cities and using the OpenWeatherMap API, data for several
-        weather conditions was compiled into a dataset. Plots were created using Matplotlib to examine
-        latitude versus each weather condition (temperature, humidity, cloudiness, and wind speed).
-        This site includes the source data and the visualizations created for the project, along with
-        explanations and observations made during the analysis.
-        </p>
-        <article>
-            <a target="_blank" href="assets/Fig1-MaxTemp.png">
-            <img src="assets/Fig1-MaxTemp.png" alt="Max Temperature Map">
-            </a>
-            </article>
+        <!-- Summary will be over half the screen, white background 
+            (heading color same as the Latitude button) -->
+        <div class="col-md-6 bg-white">
+            <h3 class="text-info fw-bold">Summary: Latitude and Weather</h3>
             <hr>
-            <article>
-            <a target="_blank" href="assets/Fig2-Humidity.png">
-            <img src="assets/Fig2-Humidity.png" alt="Humidity Map">
-            </a>
-            </article>
+            <!-- Include an image to the left side-->
+            <img src="./assets/images/Fig1-MaxTemp.png" alt="" class="float-start w-50">
+            <p>For this project, weather conditions were analyzed for over 500 cities across the globe to study how distance from the equator impacted weather. Random latitudes and longitudes were
+            compiled and using the Python library Citipy the nearest cities to those coordinates were identifed.</p>
+            <p>With the resulting list of over 500 cities and using the OpenWeatherMap API, data for several
+            weather conditions was compiled into a dataset. Plots were created using Matplotlib to examine latitude versus each weather condition (temperature, humidity, cloudiness, and wind speed). This site includes the source data and the visualizations created for the project, along with explanations and observations made during the analysis.</p>
+        </div>
+        
+        <!-- Create an area with white background to the right of the summary for the four visualizations
+            (on small screen all four should be in a horizontal line)-->
+        <div class="col-md-5 col-sm-12 bg-white ms-md-4 ms-sm-0">
+            <h3 class="text-info fw-bold">Visualizations</h3>
             <hr>
-            <article>
-            <a href="assets/Fig3-Cloudiness.png">
-            <img target="_blank" src="assets/Fig3-Cloudiness.png" alt="Cloudiness Map">
-            </a>
-            </article>
-            <article>
-                <a href="assets/Fig4-Wind.png">
-                <img target="_blank" src="assets/Fig4-Wind.png" alt="Windspeed Map">
-                </a>
-                </article>
-            <hr>
+
+            <div class="row">
+                <a href="./visualizations/max_temp.html" class="col-md-6 col-sm-3"><img src="./assets/images/Fig1-MaxTemp.png" alt="fig1" class="w-100"></a><a href="./visualizations/humidity.html" class="col-md-6 col-sm-3"><img src="./assets/images/Fig2-Humidity.png" alt="fig1" class="w-100"></a><a href="./visualizations/cloudiness.html" class="col-md-6 col-sm-3"><img src="./assets/images/Fig3-Cloudiness.png" alt="fig3" class="w-100"></a><a href="./visualizations/wind.html" class="col-md-6 col-sm-3"><img src="./assets/images/Fig4-Wind.png" alt="fig4" class="w-100"></a>
+            <!-- on sm would like to use ms-0-->
+            </div>
         </div>
     </div>
-
-            
-
+</div>
 
 
 
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
-
 </html>
