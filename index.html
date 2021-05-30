@@ -21,16 +21,19 @@
 </head>
 
 <body style="background-color: lightgray;">
+   
     <!-- From bootstrap documentation add navbar and customize paddings and margins-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
         <div class="container-fluid">
-          <!-- Keep button to the far left/update for teal-colored button, white bolded text, rounded corners-->
-          <a class="navbar-brand bg-info text-white p-2 rounded fw-bold" href="index.html">Latitude</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+        
+            <!-- Keep button to the far left/update for teal-colored button, white bolded text, rounded corners-->
+            <a class="navbar-brand bg-info text-white p-2 rounded fw-bold" href="index.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" 
@@ -50,7 +53,7 @@
                   <a class="nav-link active"  href="./visualizations/data.html">Data</a>
                 </li>
             </ul>
-          </div>
+            </div>
         </div>
       </nav>
 
@@ -73,13 +76,22 @@
         
         <!-- Create an area with white background to the right of the summary for the four visualizations
             (on small screen all four should be in a horizontal line)-->
-        <div class="col-md-5 col-sm-12 bg-white ms-md-4 ms-sm-0">
+        <div class="col-md-5 col-sm-12 bg-white ms-md-4 ms-sm-0 p-sm-4">
             <h3 class="text-info fw-bold">Visualizations</h3>
             <hr>
 
             <div class="row">
-                <a href="./visualizations/max_temp.html" class="col-md-6 col-sm-3"><img src="./assets/images/Fig1-MaxTemp.png" alt="fig1" class="w-100"></a><a href="./visualizations/humidity.html" class="col-md-6 col-sm-3"><img src="./assets/images/Fig2-Humidity.png" alt="fig1" class="w-100"></a><a href="./visualizations/cloudiness.html" class="col-md-6 col-sm-3"><img src="./assets/images/Fig3-Cloudiness.png" alt="fig3" class="w-100"></a><a href="./visualizations/wind.html" class="col-md-6 col-sm-3"><img src="./assets/images/Fig4-Wind.png" alt="fig4" class="w-100"></a>
-            <!-- on sm would like to use ms-0-->
+                <a href="./visualizations/max_temp.html" class="col-md-6 col-sm-3">
+                    <img src="./assets/images/Fig1-MaxTemp.png" alt="fig1" class="w-100">
+                </a>
+                <a href="./visualizations/humidity.html" class="col-md-6 col-sm-3">
+                    <img src="./assets/images/Fig2-Humidity.png" alt="fig1" class="w-100">
+                </a>
+                <a href="./visualizations/cloudiness.html" class="col-md-6 col-sm-3">
+                    <img src="./assets/images/Fig3-Cloudiness.png" alt="fig3" class="w-100">
+                </a>
+                <a href="./visualizations/wind.html" class="col-md-6 col-sm-3">
+                    <img src="./assets/images/Fig4-Wind.png" alt="fig4" class="w-100"></a>
             </div>
         </div>
     </div>
