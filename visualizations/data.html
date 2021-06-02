@@ -21,7 +21,7 @@
 </head>
 
 <!--Beneath the navbar the background is light gray when screen is large-->
-<body style="background-color: lightgray; overflow-x: scroll">
+<body style="background-color: lightgray;">
    
     <!-- From bootstrap documentation add navbar and customize paddings and margins-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
@@ -70,9 +70,9 @@
     <!-- Copy in the text from table.html (the resulting table from pd.read_csv to html)
       Remove border="1" for no borders, add table-striped instead
       Also, uses text-align: left in place of right for headers and cities to align-->
-    <div class="table-reponsive"> 
-             
-      <table class="dataframe table table-striped  bg-white col-md-12 col-sm-12 p-2">
+    <div class="table-reponsive">
+      <div class="overflow-auto">             
+      <table class="dataframe table table-striped bg-white col-md-12 col-sm-12 p-2">
           <thead>
             <tr style="text-align: left;">
               <th>City_ID</th>
@@ -6654,6 +6654,7 @@
             </tr>
           </tbody>
         </table> 
+      </div>
       </div>
     </div>       
   </div>
