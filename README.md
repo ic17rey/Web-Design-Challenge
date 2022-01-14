@@ -1,8 +1,11 @@
 # Web Design Challenge - Latitude Dashboard
 
+#### [Landing page for the Web Design Challenge](https://ic17rey.github.io/Web-Design-Challenge/) 
+
 A visualization dashboard is created from data and images from a past project where weather conditions at different latitudes were analyzed.  
 * The data is stored within the resources folder in assets, in the cities.csv file
-* The landing page created (index.html) includes a summary of the project and also displays in a section called Visualizations the plots that were created  
+* The landing page created (index.html) includes a summary of the project and also displays in a section called Visualizations the plots that were created
+
 
   * The plots displayed in Visualizations include 
     * Max Temperature
